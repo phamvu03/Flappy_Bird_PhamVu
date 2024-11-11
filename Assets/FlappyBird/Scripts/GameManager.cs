@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         gameOverCanvas.SetActive(true);
+        gamePlayCanvas.SetActive(false);
         BirdController.instance.setIsPlaying(false);
     }
     public void RestartGame()
@@ -41,9 +42,5 @@ public class GameManager : MonoBehaviour
         gamePlayCanvas.SetActive(false);
         gamePausedCanvas.SetActive(true);
         BirdController.instance.setIsPlaying(false);
-    }
-    private void Start()
-    {
-        
     }
 }

@@ -6,9 +6,9 @@ public class PipeSpawner : MonoBehaviour
 {
     public GameObject pipe;
 
-    public float upperPosi = 0.5f;
-    public float lowerPosi = 0f;
-    private float spawnTime = 1f;
+    public float upperPosi = 2f;
+    public float lowerPosi = -1f;
+    [SerializeField] private float spawnTime = 1f;
     private float timer;
 
     private void SpawnPipe()
