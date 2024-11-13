@@ -50,7 +50,6 @@ public class ScoreScript : MonoBehaviour
         //Status: Fix Pending
         //bestTxt.text = PlayerPrefs.GetInt("BestScore", 0).ToString();
         //Luu dc BestScore 1 lan, lan ke tiep BestScore bi luu thanh 0
-        //Chua tim ra nguyen nhan
 
         bestTxt.text = PlayerPrefs.GetInt("BestScore", best).ToString();
         UpdateBestScore();
